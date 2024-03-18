@@ -1,0 +1,367 @@
+/* Reset some default styling */
+body, h1, h2, p, table, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  height: 100%;
+  margin: 0;
+}
+
+/* Header styling */
+header {
+  text-align: left;
+  color: orange;
+  padding: 14px;
+  background-color: #173c45;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add padding for better spacing */
+}
+
+.navbar a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 14px 16px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+.navbar a:hover {
+  background-color: lightblue;
+  color: #333;
+}
+
+.navbar-logo {
+  padding: 10px;
+}
+
+.navbar-logo img {
+  max-height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  margin-left: 20px;
+}
+
+/* Home section styling */
+.home {
+  background: url('img/b2.jpg') center/cover no-repeat;
+  padding: 20px;
+  text-align: right;
+  color: whitesmoke;
+}
+
+/* About section styling */
+.about {
+  text-align: justify;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* About section flexbox */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 80%; /* Adjusted width for better responsiveness */
+  max-width: 400px; /* Added max-width to prevent the container from becoming too wide on larger screens */
+}
+
+.about-img:hover {
+  border: 1px solid #777;
+}
+
+.about-img img {
+  border-radius: 50%; /* Modified border-radius for a more subtle effect */
+  width: 48%; /* Adjusted width to fit two images side by side with a small gap */
+  height: auto;
+}
+
+.about-img-desc {
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 15px;
+  text-align: justify;
+}
+
+/* Banner section styling */
+.banner table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner tr{
+  font-size: 4vw;
+  background-color: #173c45;
+  color: orange;
+}
+/* Services section styling */
+.services {
+  text-align: center;
+  padding: 20px;
+  background-color: #173c45;
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: gainsboro;
+}
+
+.img-courses {
+  width: 100%;
+  text-align: center;
+}
+
+.img-courses img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out; /* Adding transition effect */
+}
+
+.img-courses img:hover {
+  opacity: 0.8; /* Adjust the opacity as per your preference */
+}
+
+/* Center the images within each .img-courses container */
+.courses-flex {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Testimonials section styling */
+.testimonials {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.test-img {
+  display: flex;
+  flex-direction: row; /* Set the direction to row */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 40%;
+}
+
+.test-img:hover {
+  border: 1px solid #777;
+}
+
+.test-img img {
+  border-radius: 100px;
+  height: 200px;/
+  width: 200px; /* Adjusted width for better display */
+  object-fit: cover;
+}
+
+.test-img-desc {
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 15px;
+  text-align: justify;
+  flex: 1;
+  margin-left: 10px; /* Add margin to separate text from image */
+}
+
+/* Portfolio section styling */
+.portfolio {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+/* Contact Us section styling */
+.contact {
+  margin: 5%;
+  background-color: #173c45;
+}
+form {
+  display: flex;
+  flex-direction: column; /* Arrange the elements vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  background-color: #173c45;
+  color: white; /* Set text color to white for better contrast */
+}
+
+.contact_us {
+  width: 300px; /* Set a width for the form */
+}
+
+input,
+select,
+textarea {
+  width: 80%; /* Make input fields and selects take up 100% width */
+  margin: 5px 0; /* Add some spacing between elements */
+  padding: 10px;
+  background-color: #173c45;
+  color: #f0f0f0;
+}
+
+textarea {
+  resize: none; /* Disable textarea resizing */
+}
+
+/* Gallery section styling */
+.gallery {
+  text-align: justify;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Info section styling */
+.info {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+}
+
+.info table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info tr{
+  font-size: 2vw;
+  color:#f0f0f0;
+}
+
+
+/* Footer styling */
+footer {
+  font-size: 1vw;
+  text-align: center;
+  padding: 10px;
+  background-color: #173c45;
+  color: whitesmoke;
+}
+
+/* Larger screens */
+@media (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .about-img,
+  .test-img {
+    width: 25%;
+  }
+
+  .about-img img,
+  .test-img img {
+    width: 100%;
+  }
+
+  .contact_us {
+    width: 50%;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 1199px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .about-img,
+  .test-img {
+    width: 50%;
+  }
+
+  .about-img img,
+  .test-img img {
+    width: 100%;
+  }
+
+  .contact_us {
+    width: 75%;
+  }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+    display: none; /* Hide the desktop menu on smaller screens */
+  }
+
+  .mobile-menu-btn {
+    display: block; /* Display the mobile menu button */
+  }
+
+  .mobile-menu {
+    display: flex; /* Display the mobile menu */
+    margin-top: 10px;
+  }
+
+  .mobile-menu a {
+    padding: 10px;
+  }
+}
+
+.about-img {
+  flex-direction: column; /* Stack images vertically on smaller screens */
+  align-items: center;
+}
+
+.about-img img {
+  width: 100%; /* Full width for images in a column layout */
+  margin-bottom: 10px; /* Add spacing between stacked images */
+}
+
+.test-img {
+  flex-direction: column; /* Stack image and text vertically on smaller screens */
+  align-items: center;
+  text-align: center;
+}
+
+.test-img img {
+  margin-bottom: 10px; /* Add spacing between stacked image and text */
+}
+
